@@ -14,3 +14,18 @@ C:\Users\jonathan.stein\Documents\Visual Studio 2015\Projects\audioVU\audioVU\ob
 C:\Users\jonathan.stein\Documents\Visual Studio 2015\Projects\audioVU\audioVU\bin\Debug\ProgBar.dll
 C:\Users\jonathan.stein\Documents\Visual Studio 2015\Projects\audioVU\audioVU\bin\Debug\ProgBar.pdb
 C:\Users\jonathan.stein\Documents\Visual Studio 2015\Projects\audioVU\audioVU\bin\Debug\ProgBar.xml
+H:\audioVU\audioVU\bin\Debug\audioVU.exe.config
+H:\audioVU\audioVU\obj\Debug\audioVU.exe
+H:\audioVU\audioVU\obj\Debug\audioVU.pdb
+H:\audioVU\audioVU\bin\Debug\audioVU.exe
+H:\audioVU\audioVU\bin\Debug\audioVU.pdb
+H:\audioVU\audioVU\bin\Debug\NAudio.dll
+H:\audioVU\audioVU\bin\Debug\NAudio.xml
+H:\audioVU\audioVU\bin\Debug\ProgBar.pdb
+H:\audioVU\audioVU\bin\Debug\ProgBar.xml
+H:\audioVU\audioVU\obj\Debug\audioVU.csprojResolveAssemblyReference.cache
+H:\audioVU\audioVU\obj\Debug\audioVU.AudioDeltaTest.resources
+H:\audioVU\audioVU\obj\Debug\audioVU.LeftMeter.resources
+H:\audioVU\audioVU\obj\Debug\audioVU.RightMeter.resources
+H:\audioVU\audioVU\obj\Debug\audioVU.Properties.Resources.resources
+H:\audioVU\audioVU\obj\Debug\audioVU.csproj.GenerateResource.Cache

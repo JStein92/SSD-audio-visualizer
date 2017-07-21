@@ -43,8 +43,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.masterCheckBox = new System.Windows.Forms.CheckBox();
+            this.redBarTimer = new System.Windows.Forms.Timer(this.components);
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.lb_peakSens = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -56,7 +60,7 @@
             this.progressBar1.Location = new System.Drawing.Point(49, 39);
             this.progressBar1.MarqueeAnimationSpeed = 1000;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(297, 27);
+            this.progressBar1.Size = new System.Drawing.Size(331, 27);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 0;
             // 
@@ -65,7 +69,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(49, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(297, 21);
+            this.comboBox1.Size = new System.Drawing.Size(331, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // timer1
@@ -161,12 +165,41 @@
             this.masterCheckBox.TabIndex = 13;
             this.masterCheckBox.UseVisualStyleBackColor = true;
             // 
+            // redBarTimer
+            // 
+            this.redBarTimer.Enabled = true;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(297, 96);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(83, 20);
+            this.numericUpDown2.TabIndex = 14;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            // 
+            // lb_peakSens
+            // 
+            this.lb_peakSens.AutoSize = true;
+            this.lb_peakSens.Location = new System.Drawing.Point(294, 78);
+            this.lb_peakSens.Name = "lb_peakSens";
+            this.lb_peakSens.Size = new System.Drawing.Size(86, 13);
+            this.lb_peakSens.TabIndex = 15;
+            this.lb_peakSens.Text = "Diff% to Spike At";
+            this.lb_peakSens.Click += new System.EventHandler(this.label4_Click);
+            // 
             // AudioDeltaTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(367, 124);
+            this.ClientSize = new System.Drawing.Size(397, 124);
+            this.Controls.Add(this.lb_peakSens);
+            this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.masterCheckBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -183,6 +216,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +237,9 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox masterCheckBox;
+        public System.Windows.Forms.Timer redBarTimer;
+        private System.Windows.Forms.Label lb_peakSens;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
     }
 }
 
